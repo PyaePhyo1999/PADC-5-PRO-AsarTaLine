@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+   >
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2.5"
+            android:layout_margin="@dimen/margin_medium_2">
+
+            <ImageView
+                android:id="@+id/iv_food_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_asataline" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white_full">
+
+                <org.mmtextview.components.MMTextView
+                    android:id="@+id/tv_shop_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_medium_2"
+                    android:layout_marginRight="@dimen/margin_medium_2"
+                    android:layout_marginTop="@dimen/margin_medium_2"
+                    android:text="Mone Hin Khar"
+                    android:textColor="@color/black_full"
+                    android:textSize="@dimen/text_heading_1x" />
+
+                <org.mmtextview.components.MMTextView
+                    android:id="@+id/tv_taste"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/tv_shop_name"
+                    android:layout_below="@id/tv_shop_name"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:text="Cafe, Italian, Chinese"
+                    android:textSize="@dimen/text_regular_2x" />
+
+                <TextView
+                    android:id="@+id/tv_cash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_taste"
+                    android:layout_alignLeft="@id/tv_shop_name"
+                    android:text="Cost $199 for one"
+                    android:textSize="@dimen/text_regular_2x" />
+
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    style="?android:attr/ratingBarStyleIndicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/tv_shop_name"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="4dp"
+                    android:max="5"
+                    android:rating="3.5"
+                    android:scaleX=".5"
+                    android:scaleY=".5"
+                    android:transformPivotX="0dp"
+                    android:transformPivotY="0dp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_background"
+        android:padding="@dimen/margin_medium"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/margin_card_medium_2"
+        android:layout_marginTop="@dimen/margin_card_medium_2"
+        android:text="4.5"
+        android:textColor="@color/white_full" />
+
+
+
+
+
+
+</RelativeLayout>
